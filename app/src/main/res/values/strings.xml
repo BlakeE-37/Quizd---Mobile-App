@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HelloWorld</string>
     <color name="quizd_blue">#2CB7EA</color>
+    <color name="button_pink">#EA2C72</color>
 </resources>
