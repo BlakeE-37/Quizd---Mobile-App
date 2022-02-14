@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quizd</string>
+    <string name="app_name">quizd</string>
     <color name="quizd_blue">#2CB7EA</color>
     <color name="button_pink">#EA2C72</color>
     <string name="play_button">Play</string>
