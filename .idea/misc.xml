@@ -8,11 +8,12 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.271" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.17239583333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.101544189453125" />
-        <entry key="app/src/main/res/layout/category.xml" value="0.1796600341796875" />
+        <entry key="app/src/main/res/layout/category.xml" value="0.8750488281250002" />
+        <entry key="app/src/main/res/layout/timer.xml" value="0.20495452880859374" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
