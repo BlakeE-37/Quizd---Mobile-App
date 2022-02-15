@@ -7,6 +7,8 @@ import android.os.CountDownTimer
 class TimerActivity : AppCompatActivity() {
     lateinit var _timer : CountDownTimer
 
+//    Just create an instance of the class and it will immediately
+//    start the countdown
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
@@ -15,14 +17,16 @@ class TimerActivity : AppCompatActivity() {
 
 
     fun setTimer() {
-        _timer = object : CountDownTimer(30000, 1000) {
+        _timer = object : CountDownTimer(3000, 1000) {
 
             override fun onTick(millisUntilFinished: Long) {
-                println("seconds remaining: " + millisUntilFinished / 1000)
+//                Edit the number displayed in the XML layout file (3...2...1)
+//                Make sure to add 1000 to millisUntilFinished, then divide by
+//                1000 to display the correct number of seconds remaining
             }
             override fun onFinish() {
-                println("done!")
+//                Move on to the next activity
             }
-        }.start()
+        }
     }
 }
