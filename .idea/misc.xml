@@ -8,8 +8,9 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.271" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.17239583333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.101544189453125" />
-        <entry key="app/src/main/res/layout/category.xml" value="0.8750488281250002" />
+        <entry key="app/src/main/res/layout/category.xml" value="0.1" />
         <entry key="app/src/main/res/layout/timer.xml" value="0.20495452880859374" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1285" />
       </map>
     </option>
   </component>
