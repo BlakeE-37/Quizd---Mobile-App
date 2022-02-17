@@ -13,7 +13,6 @@ class PlayScreen : AppCompatActivity() {
 
         val playButton: Button = findViewById(R.id.button5)
         playButton.setOnClickListener(){ categoryScreen() }
-
     }
     private fun categoryScreen(){
         val startActivity = Intent(this@PlayScreen, CategoryActivity::class.java)

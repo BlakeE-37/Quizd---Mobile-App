@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".TermActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".TimerActivity"
             android:exported="true"
             android:screenOrientation="landscape"/>

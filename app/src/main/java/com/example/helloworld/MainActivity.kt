@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        object : CountDownTimer(3000, 1000) {
+        object : CountDownTimer(2000, 1000) {
             override fun onFinish() {
                 val startActivity = Intent(this@MainActivity, PlayScreen::class.java)
                 startActivity(startActivity)
