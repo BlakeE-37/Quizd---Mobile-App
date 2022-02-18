@@ -2,5 +2,7 @@
     <string name="app_name">quizd</string>
     <color name="quizd_blue">#2CB7EA</color>
     <color name="button_pink">#EA2C72</color>
+    <color name="incorrect_red">#FE0101</color>
+    <color name="correct_green">#25A80F</color>
     <string name="play_button">Play</string>
 </resources>
