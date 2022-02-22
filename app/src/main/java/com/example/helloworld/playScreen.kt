@@ -18,4 +18,10 @@ class PlayScreen : AppCompatActivity() {
         val startActivity = Intent(this@PlayScreen, CategoryActivity::class.java)
         startActivity(startActivity)
     }
+    private fun buttonAnimation()
+    {
+        val playButton: Button = findViewById(R.id.button5)
+        playButton.width = 10
+
+    }
 }
