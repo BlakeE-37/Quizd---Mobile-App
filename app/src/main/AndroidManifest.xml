@@ -12,20 +12,20 @@
         <activity
             android:name=".TermActivity"
             android:exported="true"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".TimerActivity"
             android:exported="true"
-            android:screenOrientation="landscape"/>
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".CategoryActivity"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".PlayScreen"
             android:exported="true"
-            android:screenOrientation="landscape">
-        </activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
