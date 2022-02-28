@@ -8,9 +8,11 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
 
 
-    class TermActivity : AppCompatActivity(), SensorEventListener {
+class TermActivity : AppCompatActivity(), SensorEventListener {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.term_screen)
@@ -29,7 +31,7 @@ import androidx.appcompat.app.AppCompatActivity
         override fun onSensorChanged(p0: SensorEvent?) { //whenever the phone moves
             if (p0 != null && countDown) { //if the phone actually has moved
                 if (p0.values[1] >= speed) { //if the movement is greater than our speed
-                    println("Correct Answer!") // What To do on a correct Answer
+                    on_correct_answer() // What To do on a correct Answer
                     countDown = false //Disables any other answers
                     object: CountDownTimer(timeDelay, 1000){//Delays for timeDelay (in milliseconds)
                     override fun onTick(millisUtilFinished: Long){
@@ -40,7 +42,7 @@ import androidx.appcompat.app.AppCompatActivity
                         }
                     }.start() //starts the timer
                 }else if(p0.values[1] <= -speed) { //Flip down
-                    println("Skip Question!") //What to do on a flip-down event
+                    on_incorrect_answer() //What to do on a flip-down event
                     countDown = false
                     object: CountDownTimer(timeDelay, 1000){
                         override fun onTick(millisUtilFinished: Long){
@@ -53,6 +55,21 @@ import androidx.appcompat.app.AppCompatActivity
                 }
             }
         }
+
+        fun on_correct_answer() {
+            val myConstraint = findViewById<ConstraintLayout>(R.id.Constraint)
+            myConstraint.setBackgroundResource(R.color.correct_green)
+            val textView: TextView = findViewById<TextView>(R.id.animal_term)
+            textView.text = "Correct"
+            //add Points
+        }
+
+    fun on_incorrect_answer() {
+        val myConstraint = findViewById<ConstraintLayout>(R.id.Constraint)
+        myConstraint.setBackgroundResource(R.color.incorrect_red)
+        val textView: TextView = findViewById<TextView>(R.id.animal_term)
+        textView.text = "Incorrect"
+    }
 
         fun termSelect(): String {
             val terms = setOf("Zebra", "Antelope", "Gorilla", "Koala")
