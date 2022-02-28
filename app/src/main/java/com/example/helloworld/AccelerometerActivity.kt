@@ -20,11 +20,11 @@ class AccelerometerActivity : AppCompatActivity(), SensorEventListener {
     }
 
 
+    var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
+    val speed = 2.0f //How fast the player needs to move the phone for there to be input registered
+    val timeDelay: Long = 5000 //Won't allow players to reenter in data for this long (in Milliseconds)
 
     override fun onSensorChanged(p0: SensorEvent?) { //whenever the phone moves
-        var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
-        val speed = 2.0f //How fast the player needs to move the phone for there to be input registered
-        val timeDelay: Long = 1000 //Won't allow players to reenter in data for this long (in Milliseconds)
         if (p0 != null && countDown) { //if the phone actually has moved
             if (p0.values[1] >= speed) { //if the movement is greater than our speed
                 println("Correct Answer!") // What To do on a correct Answer
