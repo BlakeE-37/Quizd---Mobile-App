@@ -15,6 +15,7 @@ class CategoryActivity : AppCompatActivity() {
     }
     private fun timerScreen(){
         val startActivity = Intent(this@CategoryActivity, TimerActivity::class.java)
+//        intent.putExtra("choice","0")
         startActivity(startActivity)
     }
 }
