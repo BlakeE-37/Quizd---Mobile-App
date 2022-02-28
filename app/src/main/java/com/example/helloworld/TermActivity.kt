@@ -43,5 +43,6 @@ class TermActivity : AppCompatActivity() {
             val screen = findViewById<ConstraintLayout>(R.id.correct_screen)
             screen.setBackgroundColor(Color.RED)
             val textValue = findViewById<ConstraintLayout>(R.id.text)
+//            Need to figure out how to change the text to "Incorrect"
         }
     }
