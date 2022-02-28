@@ -12,11 +12,11 @@
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.17239583333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.101544189453125" />
         <entry key="app/src/main/res/layout/activity_timer.xml" value="0.15760869565217392" />
-        <entry key="app/src/main/res/layout/category.xml" value="0.15943450927734376" />
+        <entry key="app/src/main/res/layout/category.xml" value="0.1" />
         <entry key="app/src/main/res/layout/correct_screen.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/start_screen.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/term_screen.xml" value="0.11170212765957446" />
-        <entry key="app/src/main/res/layout/timer.xml" value="0.20495452880859374" />
+        <entry key="app/src/main/res/layout/start_screen.xml" value="0.17383575439453125" />
+        <entry key="app/src/main/res/layout/term_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/timer.xml" value="0.10187988281249999" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1285" />
       </map>
     </option>
