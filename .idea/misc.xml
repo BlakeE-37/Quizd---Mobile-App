@@ -3,26 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1925" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1925" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/drawable/round_button.xml" value="0.1925" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/activity_point_screen.xml" value="0.2" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/category.xml" value="0.136" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/start_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Holli/Desktop/Kotlin-AS-testing/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/category.xml" value="0.275" />
-        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/correct_screen.xml" value="0.275" />
-        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/start_screen.xml" value="0.275" />
-        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/term_screen.xml" value="0.275" />
-        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/timer.xml" value="0.275" />
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.271" />
-        <entry key="app/src/main/res/drawable/button_shape.xml" value="0.1145" />
-        <entry key="app/src/main/res/drawable/category_button_shape.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.271" />
-        <entry key="app/src/main/res/font/roboto_medium.xml" value="0.1371640407784986" />
-        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.17239583333333333" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.101544189453125" />
-        <entry key="app/src/main/res/layout/activity_timer.xml" value="0.15760869565217392" />
-        <entry key="app/src/main/res/layout/category.xml" value="0.15943450927734376" />
-        <entry key="app/src/main/res/layout/correct_screen.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/start_screen.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/term_screen.xml" value="0.11170212765957446" />
-        <entry key="app/src/main/res/layout/timer.xml" value="0.20495452880859374" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1285" />
       </map>
     </option>
   </component>
