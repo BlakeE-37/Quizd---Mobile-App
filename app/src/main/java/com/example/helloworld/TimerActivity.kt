@@ -28,7 +28,9 @@ class TimerActivity : AppCompatActivity() {
                 textView.text = time
             }
             override fun onFinish() {
+                val number = intent.getIntExtra("choice", -1)
                 val startActivity = Intent(this@TimerActivity, TermActivity::class.java)
+                startActivity.putExtra("choice",number)
                 startActivity(startActivity)
             }
 

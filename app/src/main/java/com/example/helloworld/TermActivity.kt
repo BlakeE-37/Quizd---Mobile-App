@@ -94,9 +94,27 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         myConstraint.setBackgroundResource(R.color.quizd_blue)
         setTerm()
     }
-
         fun termSelect(): String {
-            val terms = setOf("George Washington", "Lebron James", "Kanye West", "Ed Sheeran")
+            var number = intent.getIntExtra("choice", 1)
+            var terms = setOf("hello")
+            if(number == 1) {
+                terms = setOf("Zebra", "Koala", "Yeah", "This")
+
+            }
+            else if(number == 2)
+            {
+                terms = setOf("Egypt", "Lebanon", "etc", "America")
+
+            }
+            else if(number == 3)
+            {
+                terms = setOf("Bob", "Lebron James", "Kanye West", "Ed Sheeran")
+
+            }
+            else
+            {
+                terms = setOf("My oh my", "Something", "Amazing Movie", "A great movie")
+            }
             val r = (0..3).random()
             return terms.elementAt(r)
 
