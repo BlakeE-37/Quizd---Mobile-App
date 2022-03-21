@@ -16,8 +16,8 @@ val timer: Long = 31000 //how long the game will last
 var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
 val speed = 2.0f //How fast the player needs to move the phone for there to be input registered
 val timeDelay: Long = 1000 //Won't allow players to reenter in data for this long (in Milliseconds)
-var time_holder = timer/1000
-var timer_string = time_holder.toString()
+var time_holder = timer/1000 //This is a variable that converts the time from miliseconds to whole seconds (mostly for the Textview)
+var timer_string = time_holder.toString() //Changes the Time Value into a string for It's associated text box to use
 
 class TermActivity : AppCompatActivity(), SensorEventListener {
         override fun onCreate(savedInstanceState: Bundle?) {
