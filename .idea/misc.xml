@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Holli/Desktop/Kotlin-AS-testing/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1925" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1925" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/drawable/round_button.xml" value="0.1925" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/activity_point_screen.xml" value="0.2" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/category.xml" value="0.136" />
+        <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/start_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Holli/Desktop/Kotlin-AS-testing/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" /
         <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/category.xml" value="0.275" />
         <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/correct_screen.xml" value="0.275" />
         <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/start_screen.xml" value="0.275" />

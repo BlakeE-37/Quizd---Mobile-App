@@ -9,24 +9,37 @@ import android.os.CountDownTimer
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet
 
+
+val timer: Long = 31000 //how long the game will last
+var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
+val speed = 2.0f //How fast the player needs to move the phone for there to be input registered
+val timeDelay: Long = 1000 //Won't allow players to reenter in data for this long (in Milliseconds)
+var time_holder = timer/1000 //This is a variable that converts the time from miliseconds to whole seconds (mostly for the Textview)
+var timer_string = time_holder.toString() //Changes the Time Value into a string for It's associated text box to use
 
 class TermActivity : AppCompatActivity(), SensorEventListener {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.term_screen)
+
             setTerm()
+            val timer_box: TextView = findViewById<TextView>(R.id.timer)
+            object: CountDownTimer(timer, 1000){//Delays for timeDelay (in milliseconds)
+            override fun onTick(millisUtilFinished: Long){
+                time_holder -= 1
+                timer_string = time_holder.toString()
+                timer_box.text = timer_string
+            }
+                override fun onFinish() { //resets countdown so that a new answer can be received
+                }
+            }.start() //starts the timer
 
             val sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager//This and three lines down setup the gyroscope
             sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)?.also { accelerometer ->
                 sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL, SensorManager.SENSOR_DELAY_UI)
             }
         }
-
-        var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
-        val speed = 2.0f //How fast the player needs to move the phone for there to be input registered
-        val timeDelay: Long = 1000 //Won't allow players to reenter in data for this long (in Milliseconds)
 
         override fun onSensorChanged(p0: SensorEvent?) { //whenever the phone moves
             if (p0 != null && countDown) { //if the phone actually has moved

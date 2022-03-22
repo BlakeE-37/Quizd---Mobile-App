@@ -5,4 +5,5 @@
     <color name="incorrect_red">#FE0101</color>
     <color name="correct_green">#25A80F</color>
     <string name="play_button">Play</string>
+    <string name="points">Points:</string>
 </resources>
