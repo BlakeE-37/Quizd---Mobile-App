@@ -37,7 +37,7 @@ class AccelerometerActivity : AppCompatActivity(), SensorEventListener {
                         countDown = true
                     }
                 }.start() //starts the timer
-            }else if(p0.values[1] <= -speed) { //Flip down
+            }else if(p0.values[1]  <= -speed) { //Flip down
                 println("Skip Question!") //What to do on a flip-down event
                 countDown = false
                 object: CountDownTimer(timeDelay, 1000){

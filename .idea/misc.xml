@@ -11,11 +11,29 @@
         <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/activity_point_screen.xml" value="0.2" />
         <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/category.xml" value="0.136" />
         <entry key="..\:/Users/Holli/Desktop/Android-Apps/TeamProject/app/src/main/res/layout/start_screen.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Holli/Desktop/Kotlin-AS-testing/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Holli/Desktop/Kotlin-AS-testing/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" /
+        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/category.xml" value="0.275" />
+        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/correct_screen.xml" value="0.275" />
+        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/start_screen.xml" value="0.275" />
+        <entry key="..\:/Users/Shandler/Documents/BYUI/Winter 2022/Applied Programming/Sprint 9 Team Project/TeamProject-Quizd/app/src/main/res/layout/term_screen.xml" value="0.275" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.271" />
+        <entry key="app/src/main/res/drawable/button_shape.xml" value="0.1145" />
+        <entry key="app/src/main/res/drawable/category_button_shape.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.271" />
+        <entry key="app/src/main/res/font/roboto_medium.xml" value="0.1371640407784986" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.17239583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.101544189453125" />
+        <entry key="app/src/main/res/layout/activity_timer.xml" value="0.15760869565217392" />
+        <entry key="app/src/main/res/layout/category.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/correct_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/start_screen.xml" value="0.17383575439453125" />
+        <entry key="app/src/main/res/layout/term_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/timer.xml" value="0.10187988281249999" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1285" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

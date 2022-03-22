@@ -109,7 +109,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
     }
 
         fun termSelect(): String {
-            val terms = setOf("Zebra", "Antelope", "Gorilla", "Koala")
+            val terms = setOf("George Washington", "Lebron James", "Kanye West", "Ed Sheeran")
             val r = (0..3).random()
             return terms.elementAt(r)
 
