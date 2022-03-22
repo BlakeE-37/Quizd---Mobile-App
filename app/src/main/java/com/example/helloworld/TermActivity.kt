@@ -47,6 +47,10 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
             }
         }
 
+        var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
+        val speed = 4.0f //How fast the player needs to move the phone for there to be input registered
+        val timeDelay: Long = 3000 //Won't allow players to reenter in data for this long (in Milliseconds)
+
         override fun onSensorChanged(p0: SensorEvent?) { //whenever the phone moves
             if (p0 != null && countDown) { //if the phone actually has moved
                 if (p0.values[1] >= speed) { //if the movement is greater than our speed
@@ -76,13 +80,12 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         }
 
         fun on_correct_answer(timeDelay: Long) {
-            totalPoints += 1
             val newDelay = timeDelay/2 //The time the screen will be green, MUST BE LOWER THAN TIME DELAY
             val myConstraint = findViewById<ConstraintLayout>(R.id.Constraint)
             myConstraint.setBackgroundResource(R.color.correct_green)
             val textView: TextView = findViewById<TextView>(R.id.animal_term)
             textView.text = "Correct"
-            object: CountDownTimer(newDelay, 1000){//Delays for timeDelay (in milliseconds)
+            object: CountDownTimer(newDelay, 3000){//Delays for timeDelay (in milliseconds)
             override fun onTick(millisUtilFinished: Long){
 
             }
@@ -99,7 +102,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         myConstraint.setBackgroundResource(R.color.incorrect_red)
         val textView: TextView = findViewById<TextView>(R.id.animal_term)
         textView.text = "Incorrect"
-        object: CountDownTimer(newDelay, 1000){//Delays for timeDelay (in milliseconds)
+        object: CountDownTimer(newDelay, 3000){//Delays for timeDelay (in milliseconds)
         override fun onTick(millisUtilFinished: Long){
 
         }
@@ -114,9 +117,27 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         myConstraint.setBackgroundResource(R.color.quizd_blue)
         setTerm()
     }
-
         fun termSelect(): String {
-            val terms = setOf("George Washington", "Lebron James", "Kanye West", "Ed Sheeran")
+            var number = intent.getIntExtra("choice", 1)
+            var terms = setOf("hello")
+            if(number == 1) {
+                terms = setOf("Koala", "Emu", "Turtle", "Dog")
+
+            }
+            else if(number == 2)
+            {
+                terms = setOf("Egypt", "Lebanon", "etc", "America")
+
+            }
+            else if(number == 3)
+            {
+                terms = setOf("Bob", "Lebron James", "Kanye West", "Ed Sheeran")
+
+            }
+            else
+            {
+                terms = setOf("My oh my", "Something", "Amazing Movie", "A great movie")
+            }
             val r = (0..3).random()
             return terms.elementAt(r)
 
