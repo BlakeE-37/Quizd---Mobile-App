@@ -25,4 +25,18 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="30"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="30" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".PointScreen"
+            android:exported="false" />
+        <activity
             android:name=".TermActivity"
             android:exported="true"
             android:screenOrientation="landscape" />
@@ -21,6 +24,7 @@
         <activity
             android:name=".CategoryActivity"
             android:exported="false"
+            android:noHistory="true"
             android:screenOrientation="landscape" />
         <activity
             android:name=".PlayScreen"
