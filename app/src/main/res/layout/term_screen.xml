@@ -10,11 +10,15 @@
 
     <TextView
         android:id="@+id/animal_term"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Zebra"
         android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="60sp"
+        android:autoSizeMaxTextSize="150sp"
+        android:autoSizeStepGranularity="2sp"
         android:textSize="150sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

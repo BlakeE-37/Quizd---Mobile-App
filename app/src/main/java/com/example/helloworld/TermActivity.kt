@@ -25,8 +25,8 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         }
 
         var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
-        val speed = 2.0f //How fast the player needs to move the phone for there to be input registered
-        val timeDelay: Long = 1000 //Won't allow players to reenter in data for this long (in Milliseconds)
+        val speed = 4.0f //How fast the player needs to move the phone for there to be input registered
+        val timeDelay: Long = 3000 //Won't allow players to reenter in data for this long (in Milliseconds)
 
         override fun onSensorChanged(p0: SensorEvent?) { //whenever the phone moves
             if (p0 != null && countDown) { //if the phone actually has moved
@@ -62,7 +62,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
             myConstraint.setBackgroundResource(R.color.correct_green)
             val textView: TextView = findViewById<TextView>(R.id.animal_term)
             textView.text = "Correct"
-            object: CountDownTimer(newDelay, 1000){//Delays for timeDelay (in milliseconds)
+            object: CountDownTimer(newDelay, 3000){//Delays for timeDelay (in milliseconds)
             override fun onTick(millisUtilFinished: Long){
 
             }
@@ -79,7 +79,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         myConstraint.setBackgroundResource(R.color.incorrect_red)
         val textView: TextView = findViewById<TextView>(R.id.animal_term)
         textView.text = "Incorrect"
-        object: CountDownTimer(newDelay, 1000){//Delays for timeDelay (in milliseconds)
+        object: CountDownTimer(newDelay, 3000){//Delays for timeDelay (in milliseconds)
         override fun onTick(millisUtilFinished: Long){
 
         }
@@ -98,7 +98,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
             var number = intent.getIntExtra("choice", 1)
             var terms = setOf("hello")
             if(number == 1) {
-                terms = setOf("Zebra", "Koala", "Yeah", "This")
+                terms = setOf("Koala", "Emu", "Turtle", "Dog")
 
             }
             else if(number == 2)

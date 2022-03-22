@@ -11,40 +11,21 @@ class CategoryActivity : AppCompatActivity() {
         setContentView(R.layout.category)
 
         val animalsButton: Button = findViewById(R.id.button)
-        animalsButton.setOnClickListener(){timerScreenAnimals()}
+        animalsButton.setOnClickListener(){timerScreen(1)}
 
         val placesButton: Button = findViewById(R.id.button2)
-        placesButton.setOnClickListener(){timerScreenPlaces()}
+        placesButton.setOnClickListener(){timerScreen(2)}
 
         val peopleButton: Button = findViewById(R.id.button3)
-        peopleButton.setOnClickListener(){ timerScreenPeople() }
+        peopleButton.setOnClickListener(){ timerScreen(3) }
 
         val moviesButton: Button = findViewById(R.id.button4)
-        moviesButton.setOnClickListener(){timerScreenMovies()}
-
-
-
-
+        moviesButton.setOnClickListener(){timerScreen(4)}
     }
-    private fun timerScreenAnimals(){
+    private fun timerScreen(x: Int){
         val startActivity = Intent(this@CategoryActivity, TimerActivity::class.java)
-        startActivity.putExtra("choice",1)
+        startActivity.putExtra("choice",x)
         startActivity(startActivity)
     }
-    private fun timerScreenPlaces()
-    {
-        val startActivity = Intent(this@CategoryActivity, TimerActivity::class.java)
-        startActivity.putExtra("choice",2)
-        startActivity(startActivity)
-    }
-    private fun timerScreenPeople(){
-        val startActivity = Intent(this@CategoryActivity, TimerActivity::class.java)
-        startActivity.putExtra("choice",3)
-        startActivity(startActivity)
-    }
-    private fun timerScreenMovies(){
-        val startActivity = Intent(this@CategoryActivity, TimerActivity::class.java)
-        startActivity.putExtra("choice",4)
-        startActivity(startActivity)
-    }
+
 }
