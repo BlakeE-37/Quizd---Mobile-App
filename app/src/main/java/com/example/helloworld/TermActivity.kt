@@ -80,6 +80,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         }
 
         fun on_correct_answer(timeDelay: Long) {
+            totalPoints += 1
             val newDelay = timeDelay/2 //The time the screen will be green, MUST BE LOWER THAN TIME DELAY
             val myConstraint = findViewById<ConstraintLayout>(R.id.Constraint)
             myConstraint.setBackgroundResource(R.color.correct_green)
