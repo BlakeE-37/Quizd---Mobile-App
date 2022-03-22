@@ -12,15 +12,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
 
-val timer: Long = 31000 //how long the game will last
 var countDown = true//A boolean to keep track of whether or not the player can give an answer at this moment
 val speed = 2.0f //How fast the player needs to move the phone for there to be input registered
 val timeDelay: Long = 1000 //Won't allow players to reenter in data for this long (in Milliseconds)
-var time_holder = timer/1000 //This is a variable that converts the time from miliseconds to whole seconds (mostly for the Textview)
-var timer_string = time_holder.toString() //Changes the Time Value into a string for It's associated text box to use
 var totalPoints = 0
 
 class TermActivity : AppCompatActivity(), SensorEventListener {
+    val timer: Long = 31000 //how long the game will last
+    var time_holder = timer/1000 //This is a variable that converts the time from miliseconds to whole seconds (mostly for the Textview)
+    var timer_string = time_holder.toString() //Changes the Time Value into a string for It's associated text box to use
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.term_screen)
@@ -119,9 +119,9 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         setTerm()
     }
         fun termSelect(): String {
-            var number = intent.getIntExtra("choice", 1)
+            var number = intent.getIntExtra("choice", 1) //Gets a number depending on category screen button pressed
             var terms = setOf("hello")
-            if(number == 1) {
+            if(number == 1) { //Checks to see if the number is 1 (associated with animals
                 terms = setOf("Koala", "Emu", "Turtle", "Dog")
 
             }
