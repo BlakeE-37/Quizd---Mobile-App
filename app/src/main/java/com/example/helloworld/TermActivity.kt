@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -17,6 +18,7 @@ val speed = 2.0f //How fast the player needs to move the phone for there to be i
 val timeDelay: Long = 1000 //Won't allow players to reenter in data for this long (in Milliseconds)
 var time_holder = timer/1000 //This is a variable that converts the time from miliseconds to whole seconds (mostly for the Textview)
 var timer_string = time_holder.toString() //Changes the Time Value into a string for It's associated text box to use
+var totalPoints = 0
 
 class TermActivity : AppCompatActivity(), SensorEventListener {
         override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +34,10 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
                 timer_box.text = timer_string
             }
                 override fun onFinish() { //resets countdown so that a new answer can be received
+                    val point_screen = Intent(this@TermActivity, PointScreen::class.java)
+                    point_screen.putExtra("totalPoints", totalPoints)
+                    startActivity(point_screen)
+                    finish()
                 }
             }.start() //starts the timer
 
@@ -70,6 +76,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         }
 
         fun on_correct_answer(timeDelay: Long) {
+            totalPoints += 1
             val newDelay = timeDelay/2 //The time the screen will be green, MUST BE LOWER THAN TIME DELAY
             val myConstraint = findViewById<ConstraintLayout>(R.id.Constraint)
             myConstraint.setBackgroundResource(R.color.correct_green)
