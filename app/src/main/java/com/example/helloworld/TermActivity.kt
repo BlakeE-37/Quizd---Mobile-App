@@ -27,7 +27,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
 
             setTerm()
             val timer_box: TextView = findViewById<TextView>(R.id.timer)
-            object: CountDownTimer(timer, 1000){//Delays for timeDelay (in milliseconds)
+            object: CountDownTimer(31000, 1000){//Delays for timeDelay (in milliseconds)
             override fun onTick(millisUtilFinished: Long){
                 time_holder -= 1
                 timer_string = time_holder.toString()
@@ -119,7 +119,7 @@ class TermActivity : AppCompatActivity(), SensorEventListener {
         setTerm()
     }
         fun termSelect(): String {
-            var number = intent.getIntExtra("choice", 1) //Gets a number depending on category screen button pressed
+            val number = intent.getIntExtra("choice", 1) //Gets a number depending on category screen button pressed
             var terms = setOf("hello")
             if(number == 1) { //Checks to see if the number is 1 (associated with animals
                 terms = setOf("Koala", "Emu", "Turtle", "Dog")
