@@ -18,12 +18,14 @@ val timeDelay: Long = 1000 //Won't allow players to reenter in data for this lon
 var totalPoints = 0
 
 class TermActivity : AppCompatActivity(), SensorEventListener {
-    val timer: Long = intent.getLongExtra("Timer", 31000) //how long the game will last
-    var time_holder = timer/1000 //This is a variable that converts the time from miliseconds to whole seconds (mostly for the Textview)
-    var timer_string = time_holder.toString() //Changes the Time Value into a string for It's associated text box to use
+
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.term_screen)
+
+            val timer: Long = intent.getLongExtra("Timer", 31000) //how long the game will last
+            var time_holder = timer/1000 //This is a variable that converts the time from miliseconds to whole seconds (mostly for the Textview)
+            var timer_string = time_holder.toString() //Changes the Time Value into a string for It's associated text box to use
 
             setTerm()
             val timer_box: TextView = findViewById<TextView>(R.id.timer)
