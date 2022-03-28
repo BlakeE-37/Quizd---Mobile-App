@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -16,7 +17,7 @@ class PlayScreen : AppCompatActivity() {
     }
     private fun categoryScreen(){
         val startActivity = Intent(this@PlayScreen, CategoryActivity::class.java)
-        startActivity(startActivity)
+        startActivity(startActivity, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
     }
     private fun buttonAnimation()
     {

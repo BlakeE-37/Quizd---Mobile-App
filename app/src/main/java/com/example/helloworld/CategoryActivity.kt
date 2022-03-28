@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -25,7 +26,7 @@ class CategoryActivity : AppCompatActivity() {
     private fun timerScreen(x: Int){
         val startActivity = Intent(this@CategoryActivity, TimerActivity::class.java)
         startActivity.putExtra("choice",x)
-        startActivity(startActivity)
+        startActivity(startActivity, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
     }
 
 }

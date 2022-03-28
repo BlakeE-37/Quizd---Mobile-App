@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -20,7 +21,7 @@ class PointScreen : AppCompatActivity() {
         //function to start PlayScreen activity
         fun goBack() {
         val play = Intent(this@PointScreen, PlayScreen::class.java)
-            startActivity(play)
+            startActivity(play, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
         }
 
         //back button - takes you to play screen - starts goBack function

@@ -1,13 +1,10 @@
 package com.example.helloworld
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.os.Handler
-import android.os.Looper
 import android.widget.TextView
-import java.util.concurrent.TimeUnit
+import androidx.appcompat.app.AppCompatActivity
 
 class TimerActivity : AppCompatActivity() {
     lateinit var _timer : CountDownTimer
@@ -32,6 +29,7 @@ class TimerActivity : AppCompatActivity() {
                 val startActivity = Intent(this@TimerActivity, TermActivity::class.java)
                 startActivity.putExtra("choice",number)
                 startActivity(startActivity)
+                finish()
             }
 
         }
