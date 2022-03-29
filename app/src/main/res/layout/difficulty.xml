@@ -8,65 +8,58 @@
     android:screenOrientation="landscape">
 
 
+    <TextView
+        android:id="@+id/Limiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Time Limit:"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/Hard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
         android:background="@drawable/category_button_shape"
         android:fontFamily="@font/roboto_medium"
-        android:text="Animals"
+        android:text="60 Seconds"
         android:textAllCaps="false"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Medium"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/Medium"
+        app:layout_constraintTop_toTopOf="@+id/Medium"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
         android:background="@drawable/category_button_shape"
         android:fontFamily="@font/roboto_medium"
-        android:text="Places"
+        android:text="45 Seconds"
         android:textAllCaps="false"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Hard"
-        app:layout_constraintTop_toBottomOf="@+id/Easy" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/category_button_shape"
-        android:fontFamily="@font/roboto_medium"
-        android:text="People"
-        android:textAllCaps="false"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/Hard"
-        app:layout_constraintEnd_toStartOf="@+id/Easy"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/Easy"
+        app:layout_constraintTop_toTopOf="@+id/Easy" />
 
     <Button
         android:id="@+id/Easy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="176dp"
         android:background="@drawable/category_button_shape"
         android:fontFamily="@font/roboto_medium"
-        android:text="Movies"
+        android:text="30 Seconds"
         android:textAllCaps="false"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/Medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
