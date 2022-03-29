@@ -11,16 +11,16 @@ class CategoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.category)
 
-        val animalsButton: Button = findViewById(R.id.Hard)
+        val animalsButton: Button = findViewById(R.id.animals)
         animalsButton.setOnClickListener(){timerScreen(1)}
 
-        val placesButton: Button = findViewById(R.id.Medium)
+        val placesButton: Button = findViewById(R.id.places)
         placesButton.setOnClickListener(){timerScreen(2)}
 
-        val peopleButton: Button = findViewById(R.id.button3)
+        val peopleButton: Button = findViewById(R.id.people)
         peopleButton.setOnClickListener(){ timerScreen(3) }
 
-        val moviesButton: Button = findViewById(R.id.Easy)
+        val moviesButton: Button = findViewById(R.id.movies)
         moviesButton.setOnClickListener(){timerScreen(4)}
     }
     private fun timerScreen(x: Int){

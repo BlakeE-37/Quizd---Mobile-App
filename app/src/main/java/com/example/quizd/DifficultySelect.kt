@@ -11,7 +11,7 @@ class DifficultySelect : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.difficulty)
 
-        val easyButton: Button = findViewById(R.id.Easy)
+        val easyButton: Button = findViewById(R.id.movies)
         easyButton.setOnClickListener() {
 
             val number = intent.getIntExtra("choice", -1)
@@ -21,7 +21,7 @@ class DifficultySelect : AppCompatActivity() {
             startActivity.putExtra("Timer", Time)
             startActivity(startActivity, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
         }
-        val mediumButton: Button = findViewById(R.id.Medium)
+        val mediumButton: Button = findViewById(R.id.places)
         mediumButton.setOnClickListener() {
 
             val number = intent.getIntExtra("choice", -1)
@@ -31,7 +31,7 @@ class DifficultySelect : AppCompatActivity() {
             startActivity.putExtra("Timer", Time)
             startActivity(startActivity, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
         }
-        val hardButton: Button = findViewById(R.id.Hard)
+        val hardButton: Button = findViewById(R.id.animals)
         hardButton.setOnClickListener() {
 
             val number = intent.getIntExtra("choice", -1)

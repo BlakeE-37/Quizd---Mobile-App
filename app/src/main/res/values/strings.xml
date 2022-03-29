@@ -6,4 +6,8 @@
     <color name="correct_green">#25A80F</color>
     <string name="play_button">Play</string>
     <string name="points">Points:</string>
+    <string name="animals">Animals</string>
+    <string name="places">Places</string>
+    <string name="people">People</string>
+    <string name="movies">Movies</string>
 </resources>

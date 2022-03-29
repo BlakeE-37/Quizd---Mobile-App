@@ -9,64 +9,67 @@
 
 
     <Button
-        android:id="@+id/Hard"
+        android:id="@+id/animals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/category_button_shape"
         android:fontFamily="@font/roboto_medium"
-        android:text="Animals"
+        android:text="@string/animals"
         android:textAllCaps="false"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Medium"
+        app:layout_constraintEnd_toStartOf="@+id/places"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/people"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/Medium"
+        android:id="@+id/places"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/category_button_shape"
         android:fontFamily="@font/roboto_medium"
-        android:text="Places"
+        android:text="@string/places"
         android:textAllCaps="false"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Hard"
-        app:layout_constraintTop_toBottomOf="@+id/Easy" />
+        app:layout_constraintStart_toEndOf="@+id/animals"
+        app:layout_constraintTop_toBottomOf="@+id/movies"
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/category_button_shape"
         android:fontFamily="@font/roboto_medium"
-        android:text="People"
+        android:text="@string/people"
         android:textAllCaps="false"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/Hard"
-        app:layout_constraintEnd_toStartOf="@+id/Easy"
+        app:layout_constraintBottom_toTopOf="@+id/animals"
+        app:layout_constraintEnd_toStartOf="@+id/movies"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/Easy"
+        android:id="@+id/movies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/category_button_shape"
         android:fontFamily="@font/roboto_medium"
-        android:text="Movies"
+        android:text="@string/movies"
         android:textAllCaps="false"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/Medium"
+        app:layout_constraintBottom_toTopOf="@+id/places"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/people"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
