@@ -1,5 +1,6 @@
-package com.example.helloworld
+package com.example.quizd
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -23,10 +24,9 @@ class CategoryActivity : AppCompatActivity() {
         moviesButton.setOnClickListener(){timerScreen(4)}
     }
     private fun timerScreen(x: Int){
-        val startActivity = Intent(this@CategoryActivity,difficultySelect::class.java)
+        val startActivity = Intent(this@CategoryActivity, DifficultySelect::class.java)
         startActivity.putExtra("choice",x)
-        startActivity(startActivity)
-        finish()
+        startActivity(startActivity, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
     }
 
 }

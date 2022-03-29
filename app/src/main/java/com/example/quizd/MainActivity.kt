@@ -1,4 +1,4 @@
-package com.example.helloworld
+package com.example.quizd
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //starts music
+        val music1 = Intent(this@MainActivity, BackgroundMusic::class.java)
+        startService(music1)
+
         object : CountDownTimer(2000, 1000) {
             override fun onFinish() {
                 val startActivity = Intent(this@MainActivity, PlayScreen::class.java)
@@ -20,5 +24,4 @@ class MainActivity : AppCompatActivity() {
             override fun onTick(millisUntilFinished: Long) {}
         }.start()
     }
-    //This is a comment!
 }

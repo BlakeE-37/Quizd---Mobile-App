@@ -1,4 +1,4 @@
-package com.example.helloworld
+package com.example.quizd
 
 import android.hardware.Sensor
 import android.hardware.SensorEvent

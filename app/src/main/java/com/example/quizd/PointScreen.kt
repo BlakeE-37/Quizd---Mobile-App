@@ -1,4 +1,4 @@
-package com.example.helloworld
+package com.example.quizd
 
 import android.app.ActivityOptions
 import android.content.Intent
